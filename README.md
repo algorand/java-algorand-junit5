@@ -1,3 +1,5 @@
+# This is a prototype! Do not use!
+
 # Algorand JUnit Plugin
 
 This plugin aims to simplify integration testing for the Algorand blockchain by providing private networks via standard JUnit5 annotations.
