@@ -12,6 +12,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @ExtendWith(AlgorandDevServerExtension.class)
+@ExtendWith(AlgorandTestExtension.class)
 public @interface AlgorandDevServer {
     int port() default 0;
     int startupWaitTimeSeconds() default RpcServer.DEFAULT_STARTUP_WAIT_TIME_SECONDS;

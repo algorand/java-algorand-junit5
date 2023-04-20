@@ -11,13 +11,13 @@ import static com.algorand.goran.junit.AlgorandNetworkValidator.validate;
 public class TestAlgorandExtension {
     @Test
     @AlgorandPrivateNetwork(devMode = true)
-    public void test(AlgorandNetwork network) {
+    public void devModeTest(AlgorandNetwork network) {
         validate(network);
     }
 
     @Test
     @AlgorandPrivateNetwork
-    public void test2(AlgorandNetwork network) {
+    public void simpleTest(AlgorandNetwork network) {
         validate(network);
     }
 }

@@ -5,10 +5,9 @@ import com.algorand.goran.rpc.client.NetworkStartReply;
 import com.algorand.goran.rpc.client.RpcClient;
 import com.algorand.goran.rpc.RpcServer;
 
-public class AlgorandNetwork {
-    public String data;
-    public RpcServer server;
-    public RpcClient rpc;
-    public AlgodClient client;
-    public NetworkStartReply networkMetadata;
-}
+    public class AlgorandNetwork {
+        public RpcServer server;
+        public RpcClient rpc;
+        public AlgodClient client;
+        public NetworkStartReply networkMetadata;
+    }

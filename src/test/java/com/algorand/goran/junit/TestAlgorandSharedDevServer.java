@@ -8,11 +8,11 @@ import static com.algorand.goran.junit.AlgorandNetworkValidator.validate;
  * The servers in these tests are null because they are shared across all
  * tests and should not be tampered with.
  */
-@AlgorandDevServer(idleTimeoutSeconds = 60)
+@AlgorandDevServer
 public class TestAlgorandSharedDevServer {
     @Test
     @AlgorandPrivateNetwork
-    public void test(AlgorandNetwork network) {
+    public void test1(AlgorandNetwork network) {
         validate(network);
     }
 

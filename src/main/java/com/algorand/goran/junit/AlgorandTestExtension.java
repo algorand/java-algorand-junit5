@@ -23,7 +23,6 @@ public class AlgorandTestExtension extends TypeBasedParameterResolver<AlgorandNe
             network.server = server;
         }
 
-        network.data = "hooked";
         network.rpc = server.getClient();
         network.networkMetadata = network.rpc.start(name, params.binDirOverride(), params.tmpDirOverride(), params.networkTemplateOverride(), params.devMode());
 
